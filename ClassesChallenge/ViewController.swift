@@ -26,7 +26,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         /***************************************************
         * Start Your Code Here For Stretch #1 - Part II
         ***************************************************/
-                       
+        myTextView.text = "First Name: \(student.firstName)\n" +
+            "Last Name: \(student.lastName)\n" + "id Number: \(student.idNumber)\n" +
+        "Favotite Color: \(student.favoriteColor)\n"
         /***************************************************
         * End Your Code Here For Stretch #1 - Part II
         ***************************************************/
@@ -40,8 +42,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let color = favoriteColorField.text!
 
         //Uncomment the lines below for Stretch #2
-        /*
-        student = Student(  First: first, Last: last, ID: id, Color: color)
+        student = Student(First: first, Last: last, ID: id, Color: color)
 
         myTextView.text =   "First Name: \(student.firstName)\n" +
                             "Last Name: \(student.lastName)\n" +
@@ -52,7 +53,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         lastNameField.resignFirstResponder()
         idField.resignFirstResponder()
         favoriteColorField.resignFirstResponder()
-         */
+        
     }
 
     @IBAction func onHelloButtonPressed(_ sender: UIButton) {
