@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let color = favoriteColorField.text!
 
         //Uncomment the lines below for Stretch #2
-        student = Student(First: first, Last: last, ID: id, Color: color)
+        student.StudentT(First: first, Last: last, ID: id, Color: color)
 
         myTextView.text =   "First Name: \(student.firstName)\n" +
                             "Last Name: \(student.lastName)\n" +

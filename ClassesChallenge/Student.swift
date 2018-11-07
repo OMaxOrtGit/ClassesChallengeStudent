@@ -10,7 +10,7 @@
 /***************************************************
 * Start Your Code Here For MVP
 ***************************************************/
-class Student{
+class Student {
     
     var firstName = "Max"
     var lastName = "Ortman"
@@ -27,11 +27,12 @@ class Student{
     /***************************************************
     * Start Your Code Here For Stretch #2
     ***************************************************/
-    var first = 
-    var last =
-    var id =
-    var color =
-    
+    func StudentT(First: String, Last: String, ID: Int, Color: String){
+    firstName = First
+    lastName = Last
+    idNumber = ID
+    favoriteColor = Color
+    }
     /***************************************************
     * End Your Code Here For Stretch #2
     ***************************************************/
