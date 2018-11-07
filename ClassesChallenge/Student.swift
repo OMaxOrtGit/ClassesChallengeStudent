@@ -27,11 +27,11 @@ class Student {
     /***************************************************
     * Start Your Code Here For Stretch #2
     ***************************************************/
-    func StudentT(First: String, Last: String, ID: Int, Color: String){
-    firstName = First
-    lastName = Last
-    idNumber = ID
-    favoriteColor = Color
+    init (First: String, Last: String, ID: Int, Color: String){
+        firstName = First
+        lastName = Last
+        idNumber = ID
+        favoriteColor = Color
     }
     /***************************************************
     * End Your Code Here For Stretch #2

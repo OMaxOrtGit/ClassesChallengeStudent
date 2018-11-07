@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var myTextView: UITextView!
 
-    var student = Student()
+    var student = Student(First: "Max", Last: "Ortman", ID: 622299, Color: "Red")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let color = favoriteColorField.text!
 
         //Uncomment the lines below for Stretch #2
-        student.StudentT(First: first, Last: last, ID: id, Color: color)
+        student = Student(First: first, Last: last, ID: id, Color: color)
 
         myTextView.text =   "First Name: \(student.firstName)\n" +
                             "Last Name: \(student.lastName)\n" +
