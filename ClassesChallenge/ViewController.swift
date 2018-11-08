@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var myTextView: UITextView!
 
-    var student = Student(First: "Max", Last: "Ortman", ID: 622299, Color: "Red")
+    var student = Student()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func onHelloButtonPressed(_ sender: UIButton) {
         //Uncomment the line below for Stretch #3
-        //myTextView.text = student.sayHello()
+        myTextView.text = student.sayHello()
     }
 
 }

@@ -11,20 +11,23 @@
 * Start Your Code Here For MVP
 ***************************************************/
 class Student {
-    
-    var firstName = "Max"
-    var lastName = "Ortman"
+    var firstName = ""
+    var lastName = ""
+    var idNumber = 0
+    var favoriteColor = ""
+    init() {
+        firstName = "Max"
+        lastName = "Ortman"
     
     /***************************************************
     * Start Your Code Here For Stretch #1 - Part I
     ***************************************************/
-    
-    var idNumber = 622299
-    var favoriteColor = "Red"
+        idNumber = 622299
+        favoriteColor = "Red"
     /***************************************************
     * End Your Code Here For Stretch #1 - Part I
     ***************************************************/
-
+    }
     /***************************************************
     * Start Your Code Here For Stretch #2
     ***************************************************/
@@ -42,7 +45,7 @@ class Student {
     * Start Your Code Here For Stretch #3
     ***************************************************/
     func sayHello() -> String {
-    return "Hello \(), your id number is \()"
+    return "Hello \(firstName) \(lastName), your id number is \(idNumber)"
     }
     
     /***************************************************
